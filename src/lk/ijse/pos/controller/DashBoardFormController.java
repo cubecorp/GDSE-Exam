@@ -22,10 +22,11 @@ import java.io.IOException;
  */
 public class DashBoardFormController {
     public void openCustomerOnAction(ActionEvent actionEvent) throws IOException {
-        setUI("ItemForm");
+        setUI("CustomerForm");
     }
 
-    public void openItemOnAction(ActionEvent actionEvent) {
+    public void openItemOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("ItemForm");
     }
 
     public void openPlaceOrderOnAction(ActionEvent actionEvent) {

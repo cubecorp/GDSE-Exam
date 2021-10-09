@@ -7,22 +7,22 @@
  *
  */
 
-package lk.ijse.pos.entity;
+package lk.ijse.pos.view.tm;
 
 /**
  * @author Mohamed Aazaf <aazafmax2@gmail.com> (www.aazafbiz.web.app)
  * @since 10/9/21
  */
-public class Customer {
+public class CustomerTM {
     String id;
     String name;
     String address;
     double salary;
 
-    public Customer() {
+    public CustomerTM() {
     }
 
-    public Customer(String id, String name, String address, double salary) {
+    public CustomerTM(String id, String name, String address, double salary) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -59,15 +59,5 @@ public class Customer {
 
     public void setSalary(double salary) {
         this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Customer{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", salary=" + salary +
-                '}';
     }
 }

@@ -7,22 +7,22 @@
  *
  */
 
-package lk.ijse.pos.entity;
+package lk.ijse.pos.dto;
 
 /**
  * @author Mohamed Aazaf <aazafmax2@gmail.com> (www.aazafbiz.web.app)
  * @since 10/9/21
  */
-public class Customer {
+public class CustomerDTO {
     String id;
     String name;
     String address;
     double salary;
 
-    public Customer() {
+    public CustomerDTO() {
     }
 
-    public Customer(String id, String name, String address, double salary) {
+    public CustomerDTO(String id, String name, String address, double salary) {
         this.id = id;
         this.name = name;
         this.address = address;
