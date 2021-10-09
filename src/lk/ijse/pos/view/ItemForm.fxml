@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.pos.controller.ItemFormController">
+    <children>
+        <Label alignment="CENTER" layoutY="4.0" prefHeight="43.0" prefWidth="596.0" text="Item Form ">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
+        <Separator layoutX="14.0" layoutY="50.0" prefHeight="3.0" prefWidth="559.0" />
+        <TextField fx:id="txtCode" layoutX="32.0" layoutY="71.0" onAction="#searchOnAction" prefHeight="27.0" prefWidth="239.0" promptText="code" />
+        <TextField fx:id="txtDescription" layoutX="32.0" layoutY="118.0" prefHeight="27.0" prefWidth="239.0" promptText="description" />
+        <TextField fx:id="txtUnitPrice" layoutX="32.0" layoutY="156.0" prefHeight="27.0" prefWidth="239.0" promptText="unit price" />
+        <TextField fx:id="txtQtyOnHand" layoutX="32.0" layoutY="201.0" prefHeight="27.0" prefWidth="239.0" promptText="qtyOnHand" />
+        <TableView fx:id="tblItems" layoutX="22.0" layoutY="290.0" prefHeight="228.0" prefWidth="559.0">
+            <columns>
+                <TableColumn fx:id="colCode" prefWidth="81.0" text="Code" />
+                <TableColumn fx:id="colDescription" prefWidth="184.0" text="description" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="141.0" text="Unit price" />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="152.0" text="qtyOnHand" />
+            </columns>
+        </TableView>
+        <Button layoutX="212.0" layoutY="250.0" mnemonicParsing="false" onAction="#deleteOnAction" text="delete" />
+        <Button layoutX="135.0" layoutY="250.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="27.0" prefWidth="57.0" text="save" />
+    </children>
+</AnchorPane>
+
